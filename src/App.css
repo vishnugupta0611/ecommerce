@@ -1,0 +1,216 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cardbox{
+    width: 12rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    transition: all;
+    transition-duration: 0.2s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.656);
+    border-radius: 10px;
+}
+.cardbox:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.656);
+}
+.content{
+    color: rgba(0, 0, 0, 0.424);
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.price{
+    color: rgb(59, 195, 59);
+    font-weight: 600;
+}
+.cardscontainer{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    
+}
+@media (max-width:700px) {
+    .cardscontainer{
+ 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+        
+    }
+}
+@media (max-width:500px) {
+    .cardscontainer{
+ 
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2rem;
+        column-gap: 2rem;
+        
+    }
+}
+.logoimg{
+    mix-blend-mode: color-burn;
+    color: white;
+    background: wheat;
+    mix-blend-mode: color-burn;
+    border-radius: 50px;
+}
+html{
+    overflow-x: hidden;
+}
+@media (max-width:800px) {
+     
+    .cartcard{
+        flex-direction: column;
+    }
+    .maincartbox{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cartclass{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+.navclass{
+    background: #00000098;
+}
+.cartcard{
+    border: 1px solid black;
+    width: 50vw;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.656);
+    border-radius: 10px;
+    display: flex;
+    gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.cartcardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cartdesc{
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cartpriceandbtn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.cartpriceandbtn{
+    color: green;
+    
+}
+.cartclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.totalcard{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ 
+}
+.totallistcarttext{
+   
+    font-size: 20px;
+    color: rgb(47, 78, 43);
+    font-weight: 500;
+}
+.summary{
+ font-size: 30px ;   
+ color: rgb(56, 117, 26);
+ font-weight: 700;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.checkoutbtn{
+    height: 2rem;
+   width: 13rem;
+    border: 2px solid black;
+ transition: all;
+ transition-duration: 0.5s;
+ 
+ border-radius: 10px;
+}
+.checkoutbtn:hover{
+   transform: scale(1.1);
+   box-shadow: 2px 2px 3px black;
+}
+.emptybox{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.emptyshopbtn{
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #5e5b5b;
+    color: aliceblue;
+}
+
+
+@media (max-width:640px) {
+
+   
+    .footer{
+  
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+  
+    }
+   }
+  
+   @media (max-width:480px){
+    .cartcard{
+        width: 70vw;
+    }
+    .footer{
+  
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+    
+      }
+}
+.cardbtn{
+    height: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px;
+    padding: 0.8rem;
+    display: flex;
+    
+    align-items: center;
+    font-size: 11px;
+    background: #9b323200;
+    margin-bottom: 0.8rem;
+}
+.cardbtn p{
+    margin-top: 1rem;
+}
